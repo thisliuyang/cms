@@ -1,0 +1,55 @@
+version: '2'
+
+services:
+  node:
+    build: .
+    ports:
+      - "8010:8080"
+    networks:
+      - nodeapp-network
+    # volumes:
+    #   - .:/app
+    depends_on:
+      - mongodb
+
+  # mongodb:
+  #   image: doramart/dora-mongo
+  #   ports:
+  #     - "27017:27017"
+  #   networks:
+  #     - nodeapp-network
+  mongodb:
+    restart: always
+    # build: .
+    image: mongo:4.2.5
+    networks:
+      - nodeapp-network
+    # container_name: mongo
+    ports:
+      - 8011:27017
+    volumes:
+      # 数据目录  挂载出来后，即使删除容器，再用该挂载数据与docker-compose.yml文件启动容器，即可恢复到原来的数据以及用户信息
+      - ./data/mongo/data:/data/db
+      # 自定义数据备份目录，可以定时全量备份数据出来
+      - ./data/mongo/mybackup:/mybackup
+      # - /etc/localtime:/etc/localtime
+    environment:
+      - TZ=Asia/Shanghai
+      # 缓存大小配置为使用 1.5GB ， 考虑服务器中还有其他服务需要占用内存，可自定义大小
+      - wiredTigerCacheSizeGB=1.5
+    #   - MONGO_INITDB_ROOT_USERNAME=root       #初始化管理员用户名和密码
+    #   - MONGO_INITDB_ROOT_PASSWORD=root_password_metadata
+    # # --auth 开启权限认证       --noauth 关闭权限认证，找回密码时使用此配置重启服务
+    # command: mongod --auth
+  mongo_seed:
+    image: doramart/dora-mongo
+    links:
+      - mongodb
+    networks:
+      - nodeapp-network  
+    command:
+      mongorestore --host mongodb -d doracms2 --drop ./app/databak/doracms2  
+
+networks:
+  nodeapp-network:
+    driver: bridge

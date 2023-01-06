@@ -1,0 +1,30 @@
+2023-01-06 10:08:55,857 INFO 55190 [egg:logger] init all loggers with options: {"dir":"/Users/web/my-code/DoraCMS/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"doracms2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2023-01-06 10:08:55,869 INFO 55190 [egg:core] dump config after load, 8ms
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: ["/Users/web/my-code/DoraCMS/app","/Users/web/my-code/DoraCMS/config","/Users/web/my-code/DoraCMS/mocks","/Users/web/my-code/DoraCMS/mocks_proxy","/Users/web/my-code/DoraCMS/app.js"]
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app"
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/config"
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks"
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks_proxy"
+2023-01-06 10:08:56,009 INFO 55190 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app.js"
+2023-01-06 10:08:56,010 INFO 55190 [egg-watcher:agent] watcher start success
+2023-01-06 10:08:56,053 INFO 55190 [egg:core] dump config after ready, 20ms
+2023-01-06 10:31:13,942 INFO 58567 [egg:logger] init all loggers with options: {"dir":"/Users/web/my-code/DoraCMS/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"doracms2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2023-01-06 10:31:13,952 INFO 58567 [egg:core] dump config after load, 7ms
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: ["/Users/web/my-code/DoraCMS/app","/Users/web/my-code/DoraCMS/config","/Users/web/my-code/DoraCMS/mocks","/Users/web/my-code/DoraCMS/mocks_proxy","/Users/web/my-code/DoraCMS/app.js"]
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app"
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/config"
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks"
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks_proxy"
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app.js"
+2023-01-06 10:31:14,052 INFO 58567 [egg-watcher:agent] watcher start success
+2023-01-06 10:31:14,074 INFO 58567 [egg:core] dump config after ready, 6ms
+2023-01-06 10:32:05,577 INFO 58722 [egg:logger] init all loggers with options: {"dir":"/Users/web/my-code/DoraCMS/logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"doracms2-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"type":"agent"}
+2023-01-06 10:32:05,589 INFO 58722 [egg:core] dump config after load, 9ms
+2023-01-06 10:32:05,688 INFO 58722 [egg-watcher] Start watching: ["/Users/web/my-code/DoraCMS/app","/Users/web/my-code/DoraCMS/config","/Users/web/my-code/DoraCMS/mocks","/Users/web/my-code/DoraCMS/mocks_proxy","/Users/web/my-code/DoraCMS/app.js"]
+2023-01-06 10:32:05,688 INFO 58722 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app"
+2023-01-06 10:32:05,689 INFO 58722 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/config"
+2023-01-06 10:32:05,689 INFO 58722 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks"
+2023-01-06 10:32:05,689 INFO 58722 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/mocks_proxy"
+2023-01-06 10:32:05,689 INFO 58722 [egg-watcher] Start watching: "/Users/web/my-code/DoraCMS/app.js"
+2023-01-06 10:32:05,689 INFO 58722 [egg-watcher:agent] watcher start success
+2023-01-06 10:32:05,720 INFO 58722 [egg:core] dump config after ready, 5ms
