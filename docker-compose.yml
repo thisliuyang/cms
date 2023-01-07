@@ -7,8 +7,8 @@ services:
       - "8010:8080"
     networks:
       - nodeapp-network
-    # volumes:
-    #   - .:/app
+    volumes:
+      - ./data/app/public/upload:/app/app/public/upload
     depends_on:
       - mongodb
 

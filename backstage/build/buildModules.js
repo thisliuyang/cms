@@ -12,7 +12,8 @@ const {
 } = require('./utils');
 
 // 指定打包模块
-let designatedModule = ['navbar', 'adminResource'];
+let designatedModule = ['navbar', 'adminResource', 'ads'];
+// let designatedModule = ['ads'];
 
 let copyType = "dev",
     targetModules = '',

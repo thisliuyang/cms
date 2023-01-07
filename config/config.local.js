@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const isDocker = process.env.BUILD_ENV === 'docker';
-const mongohost = isDocker ? 'mongodb' : 'localhost:27017';
+const mongohost = isDocker ? 'mongodb' : 'localhost:8011';
 const mongobin = isDocker
   ? ''
   : '/Users/dora/Documents/dora/softs/mongodb/bin/';
