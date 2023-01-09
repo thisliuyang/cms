@@ -1,0 +1,6 @@
+#0 12 * * * /data/DoraCMS/mongo_backup.sh >/dev/null 2>&1
+10 14 * * * /data/DoraCMS/mongo_backup.sh > /data/DoraCMS/bak/mongo/bak-log.log 2>&1
+
+# 每2分钟执行一次
+# */2 * * * * /data/DoraCMS/mongo_backup.sh > /data/DoraCMS/bak/mongo/bak-log.log 2>&1
+

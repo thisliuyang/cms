@@ -1,11 +1,12 @@
 #!/bin/bash
+source /etc/profile
 
 # 是否删除过期数据
 expire_backup_delete="ON"
 expire_days=7
 backup_time=$(date +%Y%m%d%H%M)
-backup_dir=./bak/mongo
-mongo_docker_id=69c4d27aee1c
+backup_dir=/data/DoraCMS/bak/mongo
+mongo_docker_id=988166fb791b
 
 if [ ! -d $backup_dir ]; then
   mkdir -p $backup_dir
