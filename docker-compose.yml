@@ -41,14 +41,14 @@ services:
     #   - MONGO_INITDB_ROOT_PASSWORD=root_password_metadata
     # # --auth 开启权限认证       --noauth 关闭权限认证，找回密码时使用此配置重启服务
     # command: mongod --auth
-  mongo_seed:
-    image: doramart/dora-mongo
-    links:
-      - mongodb
-    networks:
-      - nodeapp-network  
-    command:
-      mongorestore --host mongodb -d doracms2 --drop ./app/databak/doracms2  
+  # mongo_seed:
+  #   image: doramart/dora-mongo
+  #   links:
+  #     - mongodb
+  #   networks:
+  #     - nodeapp-network  
+  #   command:
+  #     mongorestore --host mongodb -d doracms2 --drop ./app/databak/doracms2  
 
 networks:
   nodeapp-network:

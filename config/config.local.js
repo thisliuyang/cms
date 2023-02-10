@@ -65,7 +65,7 @@ module.exports = (appInfo) => {
     logger: {
       dir: path.join(appInfo.baseDir, 'logs'),
     },
-    server_path: 'http://yangzikj.com:8010',
-    server_api: 'http://yangzikj.com:8010/api',
+    server_path: 'http://cms.yangzikj.com',
+    server_api: 'http://cms.yangzikj.com/api',
   };
 };
